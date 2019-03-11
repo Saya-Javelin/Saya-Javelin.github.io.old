@@ -26,7 +26,7 @@ document.getElementById("orz").innerHTML="\
 <span style=\"font-size: 40px; color: #FF0000\">\
 膜拜成功！\
 <br>\
-vk又变强了！\
+ck又变强了！\
 </span>\
 </p>\
 <p style=\"margin:10px; font:10px/7px monospace;background:white;\">\
@@ -40,7 +40,7 @@ document.title="orz CK!";
 var cnt=0,delta=1;
 function ORZINF(){
 cnt+=delta;
-alert('OrzYYB!*'+cnt);
+alert('OrzCK!*'+cnt);
 if(cnt==1)alert('CK：诶又有一个来膜拜我的，来吧来吧继续膜');
 if(cnt==2)alert('CK：你们还是naive，我又AK了');
 if(cnt==10)alert('CK：虽然我是大佬，但是你这样一直膜我是会掉RP的');
