@@ -1,4 +1,4 @@
-﻿
+﻿﻿
 function orzyyb(){
 document.getElementById("mainarea").innerHTML="\
 <p align=\"center\">\
