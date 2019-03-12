@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta name="generator" content="Hexo 3.8.0">
+	<link rel="shortcut icon" href="favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="飒殇◎黎">
@@ -55,6 +56,24 @@
     </script>-->
 	<link href="https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css" rel="stylesheet">
 </head></html>
+
+    <link rel="stylesheet" href="lib/l2d233/css/waifu.min.css">
+    <div class="waifu">
+        <div class="waifu-tips"></div>
+        <canvas id="live2d" width="230" height="250" class="live2d"></canvas>
+        <div class="waifu-tool">
+            <span class="fa fa-home"></span>
+            <span class="fa fa-comments"></span>
+            <span class="fa fa-drivers-license-o"></span>
+            <span class="fa fa-street-view"></span>
+            <span class="fa fa-camera"></span>
+            <span class="fa fa-info-circle"></span>
+            <span class="fa fa-close"></span>
+        </div>
+    </div>
+    <script src="lib/l2d233/js/live2d.min.js"></script>
+    <script src="lib/l2d233/js/waifu-tips.min.js"></script>
+
 <body>
     <!-- 背景轮播图功能 -->
     <section class="hidden-xs">
@@ -131,20 +150,42 @@
                 
                 
                 
-                <li class>
-                    <a href="/categories">
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
                         <i class="fa fa-list"></i>分类
                     </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/categories/博客配置/">博客配置</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
                 </li>
                 
                 
                 
                 
                 
-                <li class>
-                    <a href="/tags">
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
                         <i class="fa fa-tags"></i>标签
                     </a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li>
+                            <a href="/tags/test/">test</a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
                 </li>
                 
                 
@@ -189,12 +230,100 @@
     <section class="hidden-xs">
         <div class="title-article">
             <h1>
+                <a href="/posts/3/">
+                    <span></span>
+                </a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            
+            <span class="label label-gal">
+                <i class="fa fa-eye"></i>
+            </span>
+            
+            <!-- TODO 添加评论统计 -->
+            <!--<span class="label label-gal">
+                <i class="fa fa-comments"></i>
+                <a href="/posts/3/#comments">739</a>
+            </span>-->
+        </div>
+        <div class="alert alert-gal article-body content-article">
+            <div class="item">
+                <a href="/posts/3/">
+                    <div class="img">
+                        
+                        <img src="/imgs/preview/preview4.jpg" alt>
+                    </div>
+                    <div class="info">
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="visible-xs">
+        <div class="title-article">
+            <center>
+                <h4>
+                    <a href="/posts/3/">
+                        <span></span>
+                    </a>
+                </h4>
+            </center>
+        </div>
+        <p></p>
+        <center>
+            <i class="fa fa-calendar"></i> 2019-03-12
+        </center>
+        <p></p>
+        <p></p>
+        <center>
+            
+            
+            <i class="fa fa-eye"></i>
+            
+        </center>
+        <p></p>
+        <div class="alert alert-gal article-body content-article">
+            <p style="text-align: center;">
+                <a href="/posts/3/">
+                    
+                    <img src="/imgs/preview/preview2.jpg" alt>
+                </a>
+            </p>
+        </div>
+        
+        <a class="btn btn-danger pull-right read-more btn-block" href="/posts/3/">
+            阅读全文
+            <!--<span class="badge">739</span>-->
+        </a>
+    </section>
+</div>
+     
+     <div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
+    
+    <div class="data-article hidden-xs">
+        <span class="month">03月</span>
+        <span class="day">12</span>
+    </div>
+    <!-- 大型设备文章 -->
+    <section class="hidden-xs">
+        <div class="title-article">
+            <h1>
                 <a href="/posts/61977/">
                     <span>New Text</span>
                 </a>
             </h1>
         </div>
         <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/test/">test</a>
+                
+            </span>
             
             
             <span class="label label-gal">
@@ -212,7 +341,7 @@
                 <a href="/posts/61977/">
                     <div class="img">
                         
-                        <img src="/imgs/preview/preview4.jpg" alt="New Text">
+                        <img src="/imgs/preview/preview1.jpg" alt="New Text">
                     </div>
                     <div class="info">
                         <p><s>MarkDown Test</s><br>Enter Test</p>
@@ -239,6 +368,11 @@
         <p></p>
         <center>
             
+            <i class="fa fa-tags"></i>
+            
+            <a href="/tags/test/">test</a>
+            
+            
             
             <i class="fa fa-eye"></i>
             
@@ -248,7 +382,7 @@
             <p style="text-align: center;">
                 <a href="/posts/61977/">
                     
-                    <img src="/imgs/preview/preview2.jpg" alt="New Text">
+                    <img src="/imgs/preview/preview4.jpg" alt="New Text">
                 </a>
             </p>
         </div>
@@ -297,7 +431,7 @@
                 <a href="/posts/16107/">
                     <div class="img">
                         
-                        <img src="/imgs/preview/preview3.jpg" alt="Hello World">
+                        <img src="/imgs/preview/preview4.jpg" alt="Hello World">
                     </div>
                     <div class="info">
                         
@@ -333,7 +467,7 @@
             <p style="text-align: center;">
                 <a href="/posts/16107/">
                     
-                    <img src="/imgs/preview/preview1.jpg" alt="Hello World">
+                    <img src="/imgs/preview/preview2.jpg" alt="Hello World">
                 </a>
             </p>
         </div>
@@ -437,6 +571,12 @@
             
             <li class="list-group-item">
                 <span class="post-title">
+                    <a href="/posts/3/"></a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
                     <a href="/posts/61977/">New Text</a>
                 </span>
             </li>
@@ -475,6 +615,12 @@
                 </span>
             </li>
             
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/posts/3/"></a>
+                </span>
+            </li>
+            
         </ul>
     </div>
 </aside>
@@ -503,6 +649,8 @@
             <div class="tab-content">
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+    <a href="/tags/test/" style="font-size: 9.228157863695866px;" class="tag-cloud-link">test</a>
     
 </div>
                 
