@@ -46,6 +46,7 @@ if(cnt==10)alert('CK：虽然我是大佬，但是你这样一直膜我是会掉
 if(cnt==20)alert('CK：MDZZ你怎么还在膜信不信我把你从5楼扔下去');
 if(cnt==50)alert('CK：没错我就是这么强，让你好好膜');
 if(cnt==50)delta=5,document.getElementById("ORZORZORZ").innerHTML="继续膜拜"+delta+"次";
+if(cnt==250)alert('CK：你TM还膜信不信我喊一群人来砍你');
 if(cnt==250)delta=10,document.getElementById("ORZORZORZ").innerHTML="继续膜拜"+delta+"次";
 if(cnt==1000)alert('CK：你真棒，我感受到了我又变强了，让你一次多膜一点');
 if(cnt>=1000){
