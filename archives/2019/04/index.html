@@ -46,7 +46,7 @@
       if (document.images) {
         var avatar = new Image();
         avatar.src = '/imgs/000.jpg'
-        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
+        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg,preview5.jpg,preview6.jpg,preview7.jpg,preview8.jpg,preview9.jpg,preview10.jpg'.split(',')
         var previewsPreLoad = []
         for(var i = 0; i < length; i++) {
           previewsPreLoad.push(new Image())
@@ -56,23 +56,6 @@
     </script>-->
 	<link href="https://cdn.bootcss.com/KaTeX/0.7.1/katex.min.css" rel="stylesheet"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head></html>
-
-    <link rel="stylesheet" type="text/css" href="https://saya-javelin.github.io/lib/l2d233/css/waifu.min.css">
-    <div class="waifu">
-        <div class="waifu-tips"></div>
-        <canvas id="live2d" width="230" height="250" class="live2d"></canvas>
-        <div class="waifu-tool">
-            <span class="fa fa-home"></span>
-            <span class="fa fa-comments"></span>
-            <span class="fa fa-drivers-license-o"></span>
-            <span class="fa fa-street-view"></span>
-            <span class="fa fa-camera"></span>
-            <span class="fa fa-info-circle"></span>
-            <span class="fa fa-close"></span>
-        </div>
-    </div>
-    <script src="https://saya-javelin.github.io/lib/l2d233/js/live2d.min.js"></script>
-    <script src="https://saya-javelin.github.io/lib/l2d233/js/waifu-tips.min.js"></script>
 
 <body>
     <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- �����ֲ�ͼ���� -->
@@ -87,24 +70,6 @@
     </ul>
 </section>
     <!-- ŷ�ὴ����, ˭��˭֪�� -->
-    
-    <div class="gal-menu gal-dropdown">
-    <div class="circle" id="gal">
-        <div class="ring">
-            <a href="https://saya-javelin.github.io" class="menuItem" style="left: 50%; top: 15%;">首页</a>
-            
-            <a class="menuItem" style="left: 80.3109%; top: 32.5%;">下一页</a>
-            
-            <a href="/orzck" class="menuItem" style="left: 80.3109%; top: 67.5%;">OrzCK!</a>
-            <a href="/about" class="menuItem" style="left: 50%; top: 85%;">关于</a>
-            <a href="/message" class="menuItem" style="left: 19.6891%; top: 67.5%;">留言板</a>
-            
-            <a class="menuItem" style="left: 19.6891%; top: 32.5%;">上一页</a>
-            
-        </div>
-        <audio id="audio" src="/imgs/oni.mp3"></audio>
-    </div>
-</div>
     
     <header class="navbar navbar-inverse" id="gal-header">
     <div class="container">
@@ -163,11 +128,11 @@
                         </li>
                         
                         <li>
-                            <a href="/categories/日常/">日常</a>
+                            <a href="/categories/题解/">题解</a>
                         </li>
                         
                         <li>
-                            <a href="/categories/题解/">题解</a>
+                            <a href="/categories/日常/">日常</a>
                         </li>
                         
                         
@@ -192,11 +157,11 @@
                         </li>
                         
                         <li>
-                            <a href="/tags/日常/">日常</a>
+                            <a href="/tags/题解/">题解</a>
                         </li>
                         
                         <li>
-                            <a href="/tags/题解/">题解</a>
+                            <a href="/tags/日常/">日常</a>
                         </li>
                         
                         
@@ -303,18 +268,6 @@
     </div>
 </aside>
     
-    <aside id="sidebar-recent_comments">
-    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
-        <div class="panel-heading">
-            <i class="fa fa-comments"></i>
-            最新评论
-            <i class="fa fa-times-circle panel-remove"></i>
-            <i class="fa fa-chevron-circle-up panel-toggle"></i>
-        </div>
-        <ul class="list-group list-group-flush"></ul>
-    </div>
-</aside>
-    
     <!-- 要配置好leancloud才能开启此小工具 -->
     
     <aside id="sidebar-hot_posts">
@@ -369,54 +322,11 @@
 </aside>
     
     
-    <aside id="sidebar-rand_posts">
-    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
-        <div class="panel-heading">
-            <i class="fa fa-refresh"></i>
-            随机文章
-            <i class="fa fa-times-circle panel-remove"></i>
-            <i class="fa fa-chevron-circle-up panel-toggle"></i>
-        </div>
-        <ul class="list-group list-group-flush">
-            
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/posts/61977/">New Text</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/posts/16107/">Hello World</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/posts/8464/">蒟蒻日常大事记</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
-                    <a href="/posts/10697/">题解 SP18155 【ABSP1 - abs(a-b) I】</a>
-                </span>
-            </li>
-            
-        </ul>
-    </div>
-</aside>
-    
     
     <aside id="gal-sets">
         <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
             <ul class="nav nav-pills pills-gal">
 
-                
-                <li>
-                    <a href="/archives/2019/04/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
-                </li>
                 
                 
                 <li>
@@ -430,16 +340,6 @@
                 
             </ul>
             <div class="tab-content">
-                
-                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
-    
-    <a href="/tags/test/" style="font-size: 17.993981609643498px;" class="tag-cloud-link">test</a>
-    
-    <a href="/tags/日常/" style="font-size: 15.94330746987867px;" class="tag-cloud-link">日常</a>
-    
-    <a href="/tags/题解/" style="font-size: 16.556627109229293px;" class="tag-cloud-link">题解</a>
-    
-</div>
                 
                 
                 <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
@@ -546,13 +446,11 @@
     window.slideConfig = {
       prefix: '/imgs/slide/background',
       ext: 'jpg',
-      maxCount: '1'
+      maxCount: '6'
     }
 </script>
 <script src="/js/hs.js"></script>
 <script src="/js/blog.js"></script>
-
-<script src="/js/oni.js"></script>
 
 
 <script>
